@@ -82,16 +82,43 @@ nav ul li a:hover {
    
 }
 
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 main img {
     display: block;
     margin: auto;
     text-align: center;
 }
 
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+main h2 {
+    text-align: center;
+    margin: 20px 5px 10px 5px;
+    text-indent: 8px;
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
 div.video {
     background-color: rgba(54, 54, 56, 0.247);
     margin-bottom: 30px;
-    margin: 0px -20px 0px -20px;
+    margin: 0px -18px 0px -18px;
     padding: 20px;
     padding-bottom: 57%;
     position: relative;
