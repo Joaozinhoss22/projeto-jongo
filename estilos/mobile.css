@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+header h1 {
+    font-size: 300%;
+}
+
+span#burguer {
+    display: none;
+}
+
+#itens {
+    display: block;
+}
+
+#itens > ul > li {
+    display: inline-block;
+    width: 120px;
+    flex-flow: row nowrap;
+}
+
+

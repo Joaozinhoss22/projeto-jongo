@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jongo Mistura da Raça</title>
     <link rel="shortcut icon" href="favicon/images-removebg-preview.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css"> 
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (min-width: 600px)">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>  
-<body>
+<body onresize="mudouTamanho">
     <div>
         <a href="https://www.facebook.com/pontodeculturajongomisturadaraca/?locale=pt_BR"><img src="icone/icone-facebook.png" alt="facebook"></a>
         <a href="https://www.instagram.com/jongomisturadaraca/"><img src="icone/icone-instagram.png" alt="icone-instagram"></a>
@@ -15,10 +20,12 @@
         <a href="https://api.whatsapp.com/send/?phone=5512987072976&text&type=phone_number&app_absent=0"  target="blank" rel="extarnal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABOklEQVR4nKWTvy+EQRCGHwrJOZyaiIjknFyj0KgkyusEUYpCrSHijn9CIToFpVar1PkRCYlCp+FTSBQq57Iyxxi79337eZNp9p19dnZmF9LVB1QkiuRUCWgAV8CnCbdWBwaywpaBFw/IRgIspcG2gGYGWDuawGanymJgGrro61likk4CPfTFs+1pwyTsy3olouq6Bl4bc1Z5ZxmBl+0N/R5zXrwCcBPRy6LbVPaYpwKcjhxU2W2qBswVge7EAgcDVbwDMwJdBV6BB2BShpiErux0GzjxDaippzXEj+ZM7oXy2E1p9jEwpvK7gAOTt62BIxmneA4cAnfGe5LX8q1aji+nD1rAaO8fsA0Lc7rPAXP/909lTsOS8AgcAWvAFLAuX/LDM003gF890+oGRkMm0AOMAxNAb4e8L7UAxJL0p6nW7x0AAAAASUVORK5CYII=" alt="whatsapp--v1"></a>
     </div>
     <header>
-        <img src="imagem/img130.png" alt="jongo">
+        <img src="imagem/img130.png" alt="jongo" >
         <h1>Ponto de Cultura e Memória Jongo Mistura da Raça</h1>
+
+        <span id="burguer" class="material-icons md-24" onclick="clickMenu()">menu</span>
     
-        <nav id="menu-li">
+        <menu id="itens">
             <ul>
                 <li><a href="#">Projetos</a></li>
                 <li><a href="#">Espaço</a></li>
@@ -26,7 +33,7 @@
                 <li><a href="#">Institucional</a></li>
                 <li><a href="#">Ouvidoria</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
 
     <main>
@@ -49,5 +56,25 @@
     <p>Jongo Minstura da Raça</p>
     <a href="https://www.google.com/maps/place/Ponto+De+Cultura/@-23.1673345,-45.7836777,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc4dae4654eb63:0xd60b1014753754b1!8m2!3d-23.1673345!4d-45.7836777!16s%2Fg%2F11kn6v_b0g?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D">R.Elder Oliveira Prata,5 - Jadim Coqueiro, São José dos Campos - SP, 12 247-004</a>
 </footer>
-    
+
+<script>
+
+    function mudouTamanho() {
+        if (window.innerWidth >=600) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+        if (itens.style.display =='block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+    }
+</script>
+
+</body>   
 </html>
